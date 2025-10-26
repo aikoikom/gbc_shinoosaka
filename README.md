@@ -6,6 +6,9 @@
 
 ```
 test-next/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml   # GitHub Actions自動デプロイ設定
 ├── app/
 │   ├── layout.tsx       # アプリケーションレイアウト
 │   ├── page.tsx         # メインページ
@@ -41,6 +44,7 @@ test-next/
 ├── public/              # 静的ファイル
 │   └── .nojekyll       # GitHub Pages用設定
 ├── out/                 # ビルド済み静的ファイル（SSG）
+├── .gitignore           # Git除外設定
 ├── next.config.ts       # Next.js設定（SSGエクスポート設定済み）
 ├── tsconfig.json        # TypeScript設定
 └── package.json         # パッケージ管理
@@ -92,73 +96,30 @@ pnpm start
 
 ## GitHub Pagesへのデプロイ方法
 
-### 方法1: GitHub Actions を使用（推奨）
+### GitHub Actions を使用した自動デプロイ（推奨）
 
-1. GitHubリポジトリを作成
+このプロジェクトには既に `.github/workflows/deploy.yml` が含まれています。
 
-2. プロジェクトをリポジトリにpush
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin <your-repository-url>
-   git push -u origin main
-   ```
+1. GitHub リポジトリの **Settings** > **Pages** で、**Source** を **"GitHub Actions"** に設定
 
-3. `.github/workflows/deploy.yml` を作成
-   ```yaml
-   name: Deploy to GitHub Pages
+2. 以降、masterブランチにpushすると自動的にビルド＆デプロイが実行されます
 
-   on:
-     push:
-       branches: [main]
-     workflow_dispatch:
+### デプロイワークフローの内容
 
-   permissions:
-     contents: read
-     pages: write
-     id-token: write
+- **トリガー**: masterブランチへのpush、または手動実行
+- **ビルド環境**: Ubuntu + Node.js 22 + pnpm 10
+- **処理**: 依存関係インストール → ビルド → GitHub Pagesへデプロイ
 
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-       steps:
-         - uses: actions/checkout@v4
-         - uses: pnpm/action-setup@v2
-           with:
-             version: 10
-         - uses: actions/setup-node@v4
-           with:
-             node-version: 22
-             cache: 'pnpm'
-         - run: pnpm install
-         - run: pnpm build
-         - uses: actions/upload-pages-artifact@v3
-           with:
-             path: ./out
-
-     deploy:
-       needs: build
-       runs-on: ubuntu-latest
-       environment:
-         name: github-pages
-         url: ${{ steps.deployment.outputs.page_url }}
-       steps:
-         - id: deployment
-           uses: actions/deploy-pages@v4
-   ```
-
-4. GitHub リポジトリの Settings > Pages で、Source を "GitHub Actions" に設定
-
-### 方法2: 手動デプロイ
+### 手動デプロイ
 
 1. ローカルでビルド
+
    ```bash
    pnpm build
    ```
 
 2. `out/` ディレクトリの内容を `gh-pages` ブランチにpush
+
    ```bash
    git subtree push --prefix out origin gh-pages
    ```
