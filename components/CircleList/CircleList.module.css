@@ -1,0 +1,40 @@
+.section {
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #667eea;
+}
+
+.comingSoon {
+  text-align: center;
+  padding: 3rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.comingSoon p {
+  font-size: 1.5rem;
+  color: #999;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .comingSoon p {
+    font-size: 1.2rem;
+  }
+}

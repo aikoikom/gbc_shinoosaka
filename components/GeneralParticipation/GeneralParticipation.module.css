@@ -1,0 +1,56 @@
+.section {
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #667eea;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #764ba2;
+}
+
+.stepTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.step p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .stepTitle {
+    font-size: 1.1rem;
+  }
+
+  .step p {
+    font-size: 1rem;
+  }
+}

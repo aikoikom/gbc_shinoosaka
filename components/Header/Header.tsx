@@ -1,0 +1,20 @@
+import styles from './Header.module.css'
+
+export default function Header() {
+  return (
+    <header className={styles.header}>
+      <div className={styles.container}>
+        <h1 className={styles.title}>
+          ガールズバンドクライプチオンリー
+          <br />
+          新大阪（仮）
+        </h1>
+        <div className={styles.eventInfo}>
+          <p className={styles.date}>2026年1月18日（日）</p>
+          <p className={styles.venue}>インテックス大阪</p>
+          <p className={styles.hashtag}>#大阪ガルクラプチ</p>
+        </div>
+      </div>
+    </header>
+  )
+}
