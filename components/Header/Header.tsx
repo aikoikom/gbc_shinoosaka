@@ -1,9 +1,18 @@
+import Image from 'next/image'
 import styles from './Header.module.css'
 
 export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
+        <Image
+          src="/images/logo.png"
+          alt="ガールズバンドクライ"
+          width={200}
+          height={200}
+          className={styles.logo}
+          priority
+        />
         <h1 className={styles.title}>
           ガールズバンドクライプチオンリー
           <br />
