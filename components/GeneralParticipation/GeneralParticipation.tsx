@@ -16,7 +16,7 @@ export default function GeneralParticipation() {
           <div className={styles.step}>
             <h3 className={styles.stepTitle}>2. パンフレット購入</h3>
             <p>
-              描くモン本部のサークルスペースに来ていただき、パンフレットを1冊購入する。<br />
+              「新大阪（仮）」本部のサークルスペースに来ていただき、パンフレットを1冊購入する。<br />
               （なくても頒布されている同人誌は手に入れられます）
             </p>
           </div>
