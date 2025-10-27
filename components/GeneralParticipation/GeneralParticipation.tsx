@@ -9,8 +9,8 @@ export default function GeneralParticipation() {
           <div className={styles.step}>
             <h3 className={styles.stepTitle}>1. 入場</h3>
             <p>
-              コミックトレジャー47の会場に入場したら、ガイドブックをお一人様１冊を入場ゲートでご購入をして下さい。<br />
-              （本イベントを含めた、コミックトレジャー内で開催するイベントの全てに参加が出来ます。）
+              <a href="https://www.aoboo.jp/event/item/p0087.html">こみっくトレジャー47</a>の会場に入場したら、ガイドブックをお一人様１冊を入場ゲートでご購入をして下さい。<br />
+              （本イベントを含めた、<a href="https://www.aoboo.jp/event/item/p0087.html">こみっくトレジャー47</a>内で開催するイベントの全てに参加が出来ます。）
             </p>
           </div>
           <div className={styles.step}>
