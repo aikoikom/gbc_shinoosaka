@@ -7,7 +7,7 @@ export default function Contact() {
         <h2 className={styles.heading}>連絡先</h2>
         <div className={styles.content}>
           <p className={styles.text}>
-            もし何か本イベントに対してご質問やご意見がありましたら<br />
+            本イベントに対してご質問やご意見がありましたら<br />
             以下の連絡先にお願いいたします。
           </p>
           <div className={styles.contactInfo}>
