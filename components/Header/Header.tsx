@@ -10,7 +10,7 @@ export default function Header() {
           className={styles.logo}
         />
         <h1 className={styles.title}>
-          <font size="50%">ガールズバンドクライプチオンリー</font>
+          <span style="font-size: 50%;">ガールズバンドクライプチオンリー</span>
           <br />
          『新大阪（仮）』
         </h1>
