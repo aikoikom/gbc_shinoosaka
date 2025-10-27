@@ -1,5 +1,5 @@
 .header {
-background: linear-gradient(135deg, #000000 0%, #ff0000 100%);
+background: linear-gradient(135deg, #ff0000 0%, #000000 100%);
   color: white;
   padding: 3rem 1rem;
   text-align: center;
@@ -11,6 +11,7 @@ background: linear-gradient(135deg, #000000 0%, #ff0000 100%);
 }
 
 .logo {
+  width: 100%;       /* 画面幅に合わせて拡大・縮小 */ 
   height: auto;     /* アスペクト比（1920:600）を維持 */
   display: block;   /* 下の隙間を消す（inline要素のデフォルト挙動防止） */
   max-width: 1920px;/* 原寸以上に拡大しないよう制限 */
@@ -47,8 +48,6 @@ background: linear-gradient(135deg, #000000 0%, #ff0000 100%);
 
 @media (max-width: 768px) {
   .logo {
-  width: clamp(100px, 25vw, 200px);
-  height: auto;
   margin-bottom: 1.5rem;
   }
 
