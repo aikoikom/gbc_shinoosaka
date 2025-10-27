@@ -14,10 +14,11 @@ export default function Contact() {
             <p className={styles.organizer}>主催者：ico</p>
             <p className={styles.email}>
               MAIL: aikoiko.m@gmail.com</p>
+          <div className={styles.buttonarea}>
            <p className={styles.contactbutton}>
              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuMRsJm85IwDxXvseNyhXnPU7aG-H6OcWrXBgzlg6-sqcBOw/viewform?usp=header" target="_blank">
              お問い合わせフォーム</a></p>
-          
+          </div>
           </div>
         </div>
       </div>
