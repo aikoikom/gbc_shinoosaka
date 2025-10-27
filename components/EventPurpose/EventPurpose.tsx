@@ -19,8 +19,12 @@ export default function EventPurpose() {
             関西圏の方はもちろん、それ以外の方々もご参加いただけると嬉しいです！<br />
             シールラリーなどの企画も考えているため、SNS（Twitter/現X）を要チェック！
           </p>
-
-<a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @x</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br></br>
+<a href="https://twitter.com/x?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
+  Follow @x
+</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
+          </script>
           
         </div>
       </div>
