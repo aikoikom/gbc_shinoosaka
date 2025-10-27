@@ -14,7 +14,7 @@ export default function Contact() {
             <p className={styles.organizer}>主催者：ico</p>
             <p className={styles.email}>
               MAIL: aikoiko.m@gmail.com
-              <a href="https://forms.gle/spWfjMxWYXwt56Wv5">お問い合わせフォーム</a>
+             <a href="https://forms.gle/spWfjMxWYXwt56Wv5">お問い合わせフォーム</a>
             </p>
           </div>
         </div>
