@@ -52,6 +52,35 @@
   line-height: 1.8;
 }
 
+
+.buttonarea {
+  text-align: center;   /* 中央寄せ */
+  margin-top: 2rem;     /* 上に少し余白（お好みで） */
+}
+
+/* ボタンの見た目とサイズ */
+.button {
+  display: inline-block;
+  padding: 14px 40px; 
+  font-size: clamp(14px, 2vw, 18px); 
+  background: linear-gradient(135deg, #c16a74 0%, #b45f5f 100%);
+  color: #000;  
+  font-weight: 700;
+  border: none;
+  border-radius: 9999px;   
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+/* ホバー時の演出 */
+.button:hover {
+  background: linear-gradient(135deg, #d57c83 0%, #c16a74 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
 @media (max-width: 768px) {
   .heading {
     font-size: 1.5rem;
