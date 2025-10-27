@@ -16,8 +16,7 @@ export default function Contact() {
               MAIL: aikoiko.m@gmail.com</p>
            <p className={styles.contact-button}>
              <a href="https://example.com/contact" target="_blank">
-             お問い合わせフォーム</a>
-          </p>
+             お問い合わせフォーム</a></p>
           
           </div>
         </div>
