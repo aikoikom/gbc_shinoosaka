@@ -16,7 +16,7 @@ export default function Header() {
         </h1>
         <div className={styles.eventInfo}>
           <p className={styles.date}>2026年1月18日（日）</p>
-          <p className={styles.venue}>こみっくトレジャー47atインテックス大阪</p>
+          <p className={styles.venue}><a href="https://www.aoboo.jp/event/item/p0087.html">こみっくトレジャー47</a> at インテックス大阪</p>
           <p className={styles.hashtag}>#大阪ガルクラプチ</p>
         </div>
       </div>
