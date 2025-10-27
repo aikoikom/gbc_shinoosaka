@@ -6,7 +6,7 @@ export default function CosplayInfo() {
       <div className={styles.container}>
         <h2 className={styles.heading}>コスプレ参加について</h2>
         <p className={styles.text}>
-          コスプレ参加につきましては、こみっくトレジャー47に準じます。
+          コスプレ参加につきましては、<a href="https://www.aoboo.jp/event/item/p0087.html">こみっくトレジャー47</a>に準じます。
         </p>
       </div>
     </section>
