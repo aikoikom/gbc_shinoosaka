@@ -14,6 +14,7 @@ export default function Contact() {
             <p className={styles.organizer}>主催者：ico</p>
             <p className={styles.email}>
               MAIL: aikoiko.m@gmail.com</p>
+            <br></br>
            <p className={styles.contactbutton}>
              <a href="https://example.com/contact" target="_blank">
              お問い合わせフォーム</a></p>
