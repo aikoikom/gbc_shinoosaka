@@ -20,7 +20,7 @@ export default function EventPurpose() {
             シールラリーなどの企画も考えているため、SNS（Twitter/現X）を要チェック！
           </p>
 <br></br>
-<a class="twitter-timeline" href="https://twitter.com/gbc_shinoosaka?ref_src=twsrc%5Etfw">Tweets by gbc_shinoosaka</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           
         </div>
       </div>
