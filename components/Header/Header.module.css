@@ -11,7 +11,7 @@ background: linear-gradient(135deg, #ff0000 0%, #000000 100%);
 }
 
 .logo {
-  width: 100%;       /* 画面幅に合わせて拡大・縮小 */ 
+  width: 100%;      /* 画面幅に合わせて拡大・縮小 */ 
   height: auto;     /* アスペクト比（1920:600）を維持 */
   display: block;   /* 下の隙間を消す（inline要素のデフォルト挙動防止） */
   max-width: 1920px;/* 原寸以上に拡大しないよう制限 */
