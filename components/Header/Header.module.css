@@ -11,10 +11,11 @@
 }
 
 .logo {
-  margin: 0 auto 2rem;
-  display: block;
-  width: 200px;
-  height: auto;
+  width: 100%;      /* 画面幅に合わせて自動縮小 */
+  height: auto;     /* アスペクト比（1920:600）を維持 */
+  display: block;   /* 下の隙間を消す（inline要素のデフォルト挙動防止） */
+  max-width: 1920px;/* 原寸以上に拡大しないよう制限 */
+  margin: 0 auto;   /* 中央寄せ（必要に応じて） */
 }
 
 .title {
