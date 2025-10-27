@@ -11,6 +11,7 @@ export default function CircleParticipation() {
             <ul className={styles.stepList}>
               <li>ジャンルコード: W001_パロディ：アニメ原作_こみっく★トレジャー</li>
               <li>備考欄に「『新大阪（仮）』連結希望」と記載すること</li>
+              <li>お申込み〆切は、2025年11月28日23:59までです。</li>
             </ul>
                       <div className={styles.buttonarea}>
            <p className={styles.button}>
@@ -21,7 +22,8 @@ export default function CircleParticipation() {
           </div>
           <div className={styles.step}>
             <h3 className={styles.stepTitle}>2. 参加申請フォーム送信</h3>
-            <p>お申し込み完了後に下記フォームにて参加申請をお願いします。</p>
+            <p>こみトレ47のお申し込み完了後に下記フォームにて参加申請をお願いします。</p>
+            <p>※参加申請は、2025年11月30日23:59までにお願いします。</p>
                       <div className={styles.buttonarea}>
            <p className={styles.button}>
              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZurn-tWdMHxN5c61e96gXfx313cVc_V1d1JGKy9X-mr1nMA/viewform?usp=header" target="_blank">
