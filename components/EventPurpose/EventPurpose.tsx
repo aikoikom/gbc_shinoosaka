@@ -19,8 +19,8 @@ export default function EventPurpose() {
             関西圏の方はもちろん、それ以外の方々もご参加いただけると嬉しいです！<br />
             シールラリーなどの企画も考えているため、SNS（Twitter/現X）を要チェック！
           </p>
-<br></br>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script async src="https://platform.twitter.com/widgets.js"></script>
           
         </div>
       </div>
