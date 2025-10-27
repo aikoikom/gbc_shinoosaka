@@ -1,6 +1,6 @@
 .section {
   padding: 3rem 1rem;
-  background-color: #f8f9fa;
+  background-color: #55353B;
 }
 
 .container {
@@ -13,7 +13,7 @@
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  color: #667eea;
+  color: #55353B;
 }
 
 .content p {
