@@ -17,10 +17,11 @@ export default function EventPurpose() {
           </p>
           <p>
             関西圏の方はもちろん、それ以外の方々もご参加いただけると嬉しいです！<br />
-            シールラリーなどの企画も考えているため、SNS（Twitter/現X）を要チェック！
+            シールラリーなどの企画も考えているため、SNS（Twitter/現X）を要チェック！<br />
           </p>
-
-<script async src="https://platform.twitter.com/widgets.js"></script>
+           <p className={styles.button}>
+             <a href="https://x.com/gbc_shinoosaka" target="_blank">
+             Twitter（現X）はこちら</a></p>
           
         </div>
       </div>
