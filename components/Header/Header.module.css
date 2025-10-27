@@ -1,5 +1,5 @@
 .header {
-background: linear-gradient(135deg, #ffffff 0%, #ff0000 100%);
+background: linear-gradient(135deg, #000000 0%, #ff0000 100%);
   color: white;
   padding: 3rem 1rem;
   text-align: center;
@@ -47,8 +47,9 @@ background: linear-gradient(135deg, #ffffff 0%, #ff0000 100%);
 
 @media (max-width: 768px) {
   .logo {
-    width: 150px;
-    margin-bottom: 1.5rem;
+  width: clamp(100px, 25vw, 200px);
+  height: auto;
+  margin-bottom: 1.5rem;
   }
 
   .title {
