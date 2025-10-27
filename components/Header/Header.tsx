@@ -6,17 +6,17 @@ export default function Header() {
       <div className={styles.container}>
         <img
           src="/gbc_shinoosaka/images/logo.png"
-          alt="ガールズバンドクライ"
+          alt="ガールズバンドクライプチオンリーロゴ"
           className={styles.logo}
         />
         <h1 className={styles.title}>
-          ガールズバンドクライプチオンリー
+          <font size="50%">ガールズバンドクライプチオンリー</font>
           <br />
-          新大阪（仮）
+         『新大阪（仮）』
         </h1>
         <div className={styles.eventInfo}>
           <p className={styles.date}>2026年1月18日（日）</p>
-          <p className={styles.venue}>インテックス大阪</p>
+          <p className={styles.venue}>こみっくトレジャー47atインテックス大阪</p>
           <p className={styles.hashtag}>#大阪ガルクラプチ</p>
         </div>
       </div>
