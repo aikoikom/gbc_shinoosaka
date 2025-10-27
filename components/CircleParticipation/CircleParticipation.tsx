@@ -12,6 +12,12 @@ export default function CircleParticipation() {
               <li>ジャンルコード: W001_パロディ：アニメ原作_こみっく★トレジャー</li>
               <li>備考欄に「『新大阪（仮）』連結希望」と記載すること</li>
             </ul>
+                      <div className={styles.buttonarea}>
+           <p className={styles.button}>
+             <a href="https://www.aoboo.jp/event/item/p0087.html" target="_blank">
+             親イベント「こみっくトレジャー47」</a></p>
+         </div>
+            
           </div>
           <div className={styles.step}>
             <h3 className={styles.stepTitle}>2. 参加申請フォーム送信</h3>
