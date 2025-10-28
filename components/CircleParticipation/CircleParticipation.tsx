@@ -9,7 +9,7 @@ export default function CircleParticipation() {
           <div className={styles.step}>
             <h3 className={styles.stepTitle}>1. <a href="https://www.aoboo.jp/event/item/p0087.html">こみっくトレジャー47</a>へサークル参加申込</h3>
             <ul className={styles.stepList}>
-              <li>ジャンルコード: W001_パロディ：アニメ原作_こみっく★トレジャー</li>
+              <li>ジャンルコード: こみっく★トレジャー 47 J061_ガールズバンドクライ</li>
               <li>備考欄に「『新大阪（仮）』連結希望」と記載すること</li>
               <li>お申込み〆切は、2025年11月28日23:59までです。</li>
             </ul>
