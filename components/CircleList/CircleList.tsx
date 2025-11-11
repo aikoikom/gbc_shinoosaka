@@ -9,20 +9,20 @@ export default function CircleList() {
 
 
 
-<section className={styles.circle-list}>
-  <article className={styles.circle-card}>
-    <figure className={styles.circle-thumb}>
+<section className={styles.circlelist}>
+  <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
       <img src="public/images/CC/02.jpeg" alt="新大阪（仮）本部のサークルカット" />
     </figure>
 
-    <div className={styles.circle-body}>
-      <h3 className={styles.circle-name}>新大阪（仮）本部</h3>
-      <span className={styles.circle-handle}>ｉｃｏ</span>
-      <p className={styles.circle-intro}>プチオンリー本部です。まずはこちらにお立ち寄りいただき、パンフレットをお受け取り下さい。</p>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>新大阪（仮）本部</h3>
+      <span className={styles.circlehandle}>ｉｃｏ</span>
+      <p className={styles.circleintro}>プチオンリー本部です。まずはこちらにお立ち寄りいただき、パンフレットをお受け取り下さい。</p>
 
 
-      <div className={styles.circle-social}>
-        <a href="https://x.com/gbc_shinoosaka" className={styles.sns-link}>Twitter / X</a>
+      <div className={styles.circlesocial}>
+        <a href="https://x.com/gbc_shinoosaka" className={styles.snslink}>Twitter / X</a>
       </div>
     
     </div>
