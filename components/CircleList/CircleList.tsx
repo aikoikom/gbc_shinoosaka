@@ -20,7 +20,7 @@ export default function CircleList() {
       <span className={styles.circle-handle}>ｉｃｏ</span>
       <p className={styles.circle-intro}>プチオンリー本部です。まずはこちらにお立ち寄りいただき、パンフレットをお受け取り下さい。</p>
 
-      <!-- ▼ SNSリンク（必要な分だけ残す） -->
+
       <div className={styles.circle-social}>
         <a href="https://x.com/gbc_shinoosaka" className={styles.sns-link}>Twitter / X</a>
       </div>
