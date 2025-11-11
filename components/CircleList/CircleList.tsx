@@ -57,7 +57,7 @@ export default function CircleList() {
       <img src="/gbc_shinoosaka/images/CC/05.png" alt="びびっどサンダーのサークルカット" />
     </figure>
     <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>新大阪（仮）本部</h3>
+      <h3 className={styles.circlename}>びびっどサンダー</h3>
       <span className={styles.circlehandle}>ズミクニ</span>
       <p className={styles.circleintro}>ガールズバンドクライの桃香さんが悩む本</p>
       <div className={styles.circlesocial}>
