@@ -24,7 +24,7 @@ export default function CircleList() {
       <div className={styles.circle-social}>
         <a href="https://x.com/gbc_shinoosaka" className={styles.sns-link}>Twitter / X</a>
       </div>
-      <!-- ▲ ここまで -->
+    
     </div>
   </article>
 </section>
