@@ -29,6 +29,31 @@
   font-style: italic;
 }
 
+.circlesocial {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.snslink {
+  font-size: 0.85rem;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  color: #0078ff;
+  text-decoration: none;
+  transition: background-color .15s, border-color .15s;
+}
+
+.snslink:hover,
+.snslink:focus-visible {
+  background: #e8f2ff;
+  border-color: #0078ff;
+}
+
+
+
 @media (max-width: 768px) {
   .heading {
     font-size: 1.5rem;
