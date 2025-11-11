@@ -82,7 +82,7 @@ export default function CircleList() {
 
     <article className={styles.circlecard}>
     <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/07.png" alt="あつあつフライヤーのサークルカット" />
+      <img src="/gbc_shinoosaka/images/CC/07.PNG" alt="あつあつフライヤーのサークルカット" />
     </figure>
     <div className={styles.circlebody}>
       <h3 className={styles.circlename}>あつあつフライヤー</h3>
