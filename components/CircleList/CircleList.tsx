@@ -107,6 +107,46 @@ export default function CircleList() {
       </div>
     </div>
   </article>
+
+    <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/09.png" alt="EIMLESSのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>EIMLESS</h3>
+      <span className={styles.circlehandle}>ルア</span>
+      <p className={styles.circleintro}>初参加です。ヒナとトゲトゲがもし偶然、運命、必然的に出会ったら…的なギャグ漫画本を出す予定です！</p>
+      <div className={styles.circlesocial}>
+        <a href="https://x.com/rua_gr_" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
+    <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/10.png" alt="天頂の隠れ家のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>天頂の隠れ家</h3>
+      <span className={styles.circlehandle}>天頂</span>
+      <p className={styles.circleintro}>過去に制作したグッズと新規でアクリルキーホルダーを頒布予定です！</p>
+      <div className={styles.circlesocial}>
+      </div>
+    </div>
+  </article>
+
+      <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/11jpgg" alt="ハムちゃん大好きのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>ハムちゃん大好き</h3>
+      <span className={styles.circlehandle}>もみ</span>
+      <p className={styles.circleintro}>になもも/再録か何か</p>
+      <div className={styles.circlesocial}>
+      </div>
+    </div>
+  </article>
   
 </section>
 
