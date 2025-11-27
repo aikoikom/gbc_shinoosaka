@@ -144,6 +144,7 @@ export default function CircleList() {
       <span className={styles.circlehandle}>もみ</span>
       <p className={styles.circleintro}>になもも/再録か何か</p>
       <div className={styles.circlesocial}>
+          <a href="https://x.com/hamchan69" className={styles.snslink}>Twitter / X</a>
       </div>
     </div>
   </article>
