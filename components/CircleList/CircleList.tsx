@@ -137,7 +137,7 @@ export default function CircleList() {
 
       <article className={styles.circlecard}>
     <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/11jpgg" alt="ハムちゃん大好きのサークルカット" />
+      <img src="/gbc_shinoosaka/images/CC/11jpg" alt="ハムちゃん大好きのサークルカット" />
     </figure>
     <div className={styles.circlebody}>
       <h3 className={styles.circlename}>ハムちゃん大好き</h3>
