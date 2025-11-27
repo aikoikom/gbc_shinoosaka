@@ -147,6 +147,20 @@ export default function CircleList() {
       </div>
     </div>
   </article>
+
+      <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/12.png" alt="ナスザウルスのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>ナスザウルス</h3>
+      <span className={styles.circlehandle}>てらのてら子</span>
+      <p className={styles.circleintro}>サークル「ナスザウルス」です。ガルクラの女女本出してます。よろしくお願いします。〜(   'ω'〜)</p>
+      <div className={styles.circlesocial}>
+       <a href="https://x.com/5120Gigabyte" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
   
 </section>
 
