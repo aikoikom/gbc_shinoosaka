@@ -162,6 +162,63 @@ export default function CircleList() {
       </div>
     </div>
   </article>
+
+      <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/13.png" alt="古代藍色研究会のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>古代藍色研究会</h3>
+      <span className={styles.circlehandle}>今陣</span>
+      <p className={styles.circleintro}>ガルクラの漫画(コピー本)の予定です</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/ima_jin_2458" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
+        <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/14.png" alt="下駄札26のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>下駄札26</h3>
+      <span className={styles.circlehandle}>はるのぶ</span>
+      <p className={styles.circleintro}>初ガルクラです。ルパさんや桃香さんなど、おそらく酒飲みの何らかが…</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/harunobu_or2" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
+        <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/15.png" alt="生まれたての蟹のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>生まれたての蟹</h3>
+      <span className={styles.circlehandle}>nes_Q</span>
+      <p className={styles.circleintro}>Xに投稿した漫画の再録本になる予定です。描き下ろしも多分する。</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/nes_Q" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
+        <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/16.png" alt="はやおきできた！のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>はやおきできた！</h3>
+      <span className={styles.circlehandle}>ぷるたぶ</span>
+      <p className={styles.circleintro}>になもも本かなにか</p>
+      <div className={styles.circlesocial}>
+
+      </div>
+    </div>
+  </article>
+
   
 </section>
 
