@@ -219,6 +219,20 @@ export default function CircleList() {
     </div>
   </article>
 
+        <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/17.png" alt="かもごはんのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>かもごはん</h3>
+      <span className={styles.circlehandle}>kamo</span>
+      <p className={styles.circleintro}>オールキャラ漫画河原木ましまし多め</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/kamo_gohan" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
   
 </section>
 
