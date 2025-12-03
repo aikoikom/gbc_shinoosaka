@@ -233,6 +233,33 @@ export default function CircleList() {
     </div>
   </article>
 
+          <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/18.png" alt="鴉舟（仮）のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>鴉舟（仮）</h3>
+      <span className={styles.circlehandle}>raberave</span>
+      <p className={styles.circleintro}>湿度の高いダイダス描きたいよね（願望）</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/raberave" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
+          <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/19.png" alt="イレリモツのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>イレリモツ</h3>
+      <span className={styles.circlehandle}>reitsumo</span>
+      <p className={styles.circleintro}>ガルクラ本初めて描きます、よろしくお願いいたします！</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/ustier_210" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
   
 </section>
 
