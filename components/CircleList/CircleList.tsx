@@ -261,6 +261,21 @@ export default function CircleList() {
     </div>
   </article>
   
+            <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/20.png" alt="ペンギンパーのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>ペンギンパー</h3>
+      <span className={styles.circlehandle}>ケイキチ</span>
+      <p className={styles.circleintro}>人生初参加です。になももの小説を頑張って書きます。</p>
+      <div className={styles.circlesocial}>
+
+      </div>
+    </div>
+  </article>
+
+  
 </section>
 
 
