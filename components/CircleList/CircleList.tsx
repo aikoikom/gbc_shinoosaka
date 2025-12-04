@@ -131,6 +131,7 @@ export default function CircleList() {
       <span className={styles.circlehandle}>天頂</span>
       <p className={styles.circleintro}>過去に制作したグッズと新規でアクリルキーホルダーを頒布予定です！</p>
       <div className={styles.circlesocial}>
+                  <a href="https://x.com/tentyono_artrie" className={styles.snslink}>Twitter / X</a>
       </div>
     </div>
   </article>
