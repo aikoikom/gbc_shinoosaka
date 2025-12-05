@@ -271,11 +271,52 @@ export default function CircleList() {
       <span className={styles.circlehandle}>ケイキチ</span>
       <p className={styles.circleintro}>人生初参加です。になももの小説を頑張って書きます。</p>
       <div className={styles.circlesocial}>
-
+          <a href="https://x.com/KEUkei819" className={styles.snslink}>Twitter / X</a>
       </div>
     </div>
   </article>
 
+  <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/21.png" alt="完全手動エクスプレスのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>完全手動エクスプレス</h3>
+      <span className={styles.circlehandle}>えんびたんさん</span>
+      <p className={styles.circleintro}>桃香×仁菜のカプ小説メインでやってます。。</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/AVE_EEE" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
+              <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/22.png" alt="マングロース工房のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>マングロース工房</h3>
+      <span className={styles.circlehandle}>リラックマングロース</span>
+      <p className={styles.circleintro}>ガルクラ最高〜！</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/relax_1007" className={styles.snslink}>Twitter / X</a> / <a href="https://www.pixiv.net/users/5573613" className={styles.snslink}>Pixiv</a>
+      </div>
+    </div>
+  </article>
+
+              <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/23.jpeg" alt="GO!GO!2711のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>GO!GO!2711</h3>
+      <span className={styles.circlehandle}>24、ビオ</span>
+      <p className={styles.circleintro}>トキナシトキアリ</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/2outni4" className={styles.snslink}>Twitter（24）</a> /  / <a href="https://x.com/motenaikitakami" className={styles.snslink}>Twitter（ビオ）</a>
+      </div>
+    </div>
+  </article>
   
 </section>
 
