@@ -29,77 +29,65 @@
 
 /* ボタンを中央に配置 */
 .buttonarea {
-  text-align: center;   /* 中央寄せ */
-  margin-top: 2rem;     /* 上に少し余白（お好みで） */
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* ボタンの見た目とサイズ */
 .button {
   display: inline-block;
-  padding: 14px 40px; 
-  font-size: clamp(14px, 2vw, 18px); 
+  padding: 14px 40px;
+  font-size: clamp(14px, 2vw, 18px);
   background: linear-gradient(135deg, #c16a74 0%, #b45f5f 100%);
-  color: #000;  
+  color: #000;
   font-weight: 700;
   border: none;
-  border-radius: 9999px;   
+  border-radius: 9999px;
   text-decoration: none;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.2); 
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
   transition: all 0.25s ease;
   cursor: pointer;
 }
 
-/* ホバー時の演出 */
 .button:hover {
   background: linear-gradient(135deg, #d57c83 0%, #c16a74 100%);
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
 
-
-@media (max-width: 768px) {
-  .heading {
-    font-size: 1.5rem;
-  }
-
-  .content p {
-    font-size: 1rem;
-  }
-}
-
-
+/* ===== 支援印刷所カード ===== */
 
 .circlelist {
   display: grid;
-  justify-content: center; 
-  grid-template-columns: repeat(auto-fit, minmax(240px, 320px)); 
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
   gap: 16px;
 }
-
 
 .circlecard {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding-bottom: 4px; 
+  padding-bottom: 4px;
   overflow: hidden;
   display: grid;
   grid-template-rows: auto 1fr;
-
 }
 
-
+/* バナー枠：横長・でかくならない */
 .circlethumb {
-  aspect-ratio: 725 / 882;
+  aspect-ratio: 725 / 200; /* バナー向け比率（好みで微調整OK） */
   overflow: hidden;
+  background: #fff;
 }
 
+/* 重要：これが無いと画像が暴れる */
 .circlethumb img {
-
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 切らずに収める */
   display: block;
 }
-
 
 .circlebody {
   padding: 12px 14px 16px;
@@ -118,10 +106,9 @@
 }
 
 .circleintro {
-  font-size: 0.1rem;
+  font-size: 0.9rem; /* 0.1rem は小さすぎたので自然なサイズに */
   line-height: 1.5;
 }
-
 
 .circle-social {
   margin-top: 6px;
@@ -144,4 +131,14 @@
 .snslink:focus-visible {
   background: #e8f2ff;
   border-color: #0078ff;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
 }
