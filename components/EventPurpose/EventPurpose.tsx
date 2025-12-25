@@ -46,10 +46,10 @@ export default function EventPurpose() {
              <div className={styles.circlelist}>
             <article className={styles.circlecard}>
               <figure className={styles.circlethumb}>
-                <img
+               <a href="https://www.shippo.co.jp/neko/"> <img
                   src="https://www.shippo.co.jp/neko/img/neko_banner.gif"
                   alt="ねこのしっぽ バナー"
-                />
+                /></a>
               </figure>
               <div className={styles.circlebody}>
                 <h3 className={styles.circlename}>
@@ -67,10 +67,10 @@ export default function EventPurpose() {
 
 <article className={styles.circlecard}>
               <figure className={styles.circlethumb}>
-                <img
+                <a href="https://www.starbooks.jp/"><img
                   src="http://www.starbooks.jp/images/banner.jpg"
                   alt="STARBOOKS バナー"
-                />
+                /></a>
               </figure>
               <div className={styles.circlebody}>
                 <h3 className={styles.circlename}>
