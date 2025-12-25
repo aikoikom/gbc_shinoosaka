@@ -43,6 +43,7 @@ export default function EventPurpose() {
             <p>※特典内容は予告無く変更となる場合がございます。</p>
             <p>最新の情報詳細はリンク先の各印刷所様HPにてご確認の上、ご利用ください。</p>
 
+             <div className={styles.circlelist}>
             <article className={styles.circlecard}>
               <figure className={styles.circlethumb}>
                 <img
@@ -86,7 +87,7 @@ export default function EventPurpose() {
 
 
 
-            
+           </div> 
           </div>
         </div>
       </section>
