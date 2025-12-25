@@ -60,19 +60,21 @@
 .circlelist {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 240px);
+  grid-template-columns: repeat(auto-fit, 260px);
   gap: 16px;
 }
 
+
 .circlecard {
+  width: 260px;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding-bottom: 4px;
   overflow: hidden;
   display: grid;
   grid-template-rows: auto 1fr;
 }
+
 
 
 
