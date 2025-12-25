@@ -63,6 +63,30 @@ export default function EventPurpose() {
                 </p>
               </div>
             </article>
+
+<article className={styles.circlecard}>
+              <figure className={styles.circlethumb}>
+                <img
+                  src="http://www.starbooks.jp/images/banner.jpg"
+                  alt="STARBOOKS バナー"
+                />
+              </figure>
+              <div className={styles.circlebody}>
+                <h3 className={styles.circlename}>
+                  <a href="https://www.starbooks.jp/">STARBOOKS</a>
+                </h3>
+                <span className={styles.circlehandle}>
+                  <a href="https://www.starbooks.jp/doujin/event_support.php">支援詳細ページ</a>
+                </span>
+                <p className={styles.circleintro}>
+                  ・2000円分の割引チケット進呈
+                </p>
+              </div>
+            </article>
+
+
+
+            
           </div>
         </div>
       </section>
