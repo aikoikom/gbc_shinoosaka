@@ -80,19 +80,7 @@ export default function EventPurpose() {
             最新の情報詳細はリンク先の各印刷所様HPにてご確認の上、ご利用ください。
           </p>
 
-      <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="https://www.shippo.co.jp/neko/img/neko_banner.gif" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}><a href="https://www.shippo.co.jp/neko/">ねこのしっぽ</a><h3>
-      <span className={styles.circlehandle}><a href="https://www.shippo.co.jp/neko/schedule/event_support.shtml">支援詳細ページ</a></span>
-      <p className={styles.circleintro}>
-・優遇イベント専用〆切<br></br>
-・イベント会場への搬入料 送料無料
-</p>
-    </div>
-  </article>
+
 
 
           
