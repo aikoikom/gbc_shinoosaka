@@ -20,34 +20,7 @@ export default function CircleList() {
       <p className={styles.circleintro}>プチオンリー本部です。まずはこちらにお立ち寄りいただき、パンフレットをお受け取り下さい。</p>
       <div className={styles.circlesocial}>
         <a href="https://x.com/gbc_shinoosaka" className={styles.snslink}>Twitter / X</a>
-      </div>
-    </div>
-  </article>
-
-  <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/03.png" alt="トポロジカルブランケットのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>トポロジカルブランケット</h3>
-      <span className={styles.circlehandle}>k5</span>
-      <p className={styles.circleintro}>仁菜ヒナ！仁菜ヒナ！仁菜ヒナ！仁菜ヒナ！</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/TiroDuetto" className={styles.snslink}>Twitter / X</a>
-      </div>
-    </div>
-  </article>
-
-    <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/04.png" alt="ぼたさんちのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>ぼたさんち</h3>
-      <span className={styles.circlehandle}>甘味トロ</span>
-      <p className={styles.circleintro}>ヒナがトゲナシトゲアリに加入している世界に仁菜が異世界転生するお話です！</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/botatoro3" className={styles.snslink}>Twitter / X</a>
+        <p>Ｊ09a</p>
       </div>
     </div>
   </article>
@@ -65,7 +38,7 @@ export default function CircleList() {
       </div>
     </div>
   </article>
-
+  
     <article className={styles.circlecard}>
     <figure className={styles.circlethumb}>
       <img src="/gbc_shinoosaka/images/CC/06.png" alt="まどぎわのひとのサークルカット" />
@@ -79,6 +52,26 @@ export default function CircleList() {
       </div>
     </div>
   </article>
+
+              <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/23.jpeg" alt="GO!GO!2711のサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>GO!GO!2711</h3>
+      <span className={styles.circlehandle}>24、ビオ</span>
+      <p className={styles.circleintro}>トキナシトキアリ</p>
+      <div className={styles.circlesocial}>
+          <a href="https://x.com/2outni4" className={styles.snslink}>Twitter（24）</a> /  / <a href="https://x.com/motenaikitakami" className={styles.snslink}>Twitter（ビオ）</a>
+      </div>
+    </div>
+  </article>
+  
+
+
+
+
+
 
     <article className={styles.circlecard}>
     <figure className={styles.circlethumb}>
@@ -304,19 +297,37 @@ export default function CircleList() {
     </div>
   </article>
 
-              <article className={styles.circlecard}>
+
+  <article className={styles.circlecard}>
     <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/23.jpeg" alt="GO!GO!2711のサークルカット" />
+      <img src="/gbc_shinoosaka/images/CC/03.png" alt="トポロジカルブランケットのサークルカット" />
     </figure>
     <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>GO!GO!2711</h3>
-      <span className={styles.circlehandle}>24、ビオ</span>
-      <p className={styles.circleintro}>トキナシトキアリ</p>
+      <h3 className={styles.circlename}>トポロジカルブランケット</h3>
+      <span className={styles.circlehandle}>k5</span>
+      <p className={styles.circleintro}>仁菜ヒナ！仁菜ヒナ！仁菜ヒナ！仁菜ヒナ！</p>
       <div className={styles.circlesocial}>
-          <a href="https://x.com/2outni4" className={styles.snslink}>Twitter（24）</a> /  / <a href="https://x.com/motenaikitakami" className={styles.snslink}>Twitter（ビオ）</a>
+        <a href="https://x.com/TiroDuetto" className={styles.snslink}>Twitter / X</a>
       </div>
     </div>
   </article>
+
+    <article className={styles.circlecard}>
+    <figure className={styles.circlethumb}>
+      <img src="/gbc_shinoosaka/images/CC/04.png" alt="ぼたさんちのサークルカット" />
+    </figure>
+    <div className={styles.circlebody}>
+      <h3 className={styles.circlename}>ぼたさんち</h3>
+      <span className={styles.circlehandle}>甘味トロ</span>
+      <p className={styles.circleintro}>ヒナがトゲナシトゲアリに加入している世界に仁菜が異世界転生するお話です！</p>
+      <div className={styles.circlesocial}>
+        <a href="https://x.com/botatoro3" className={styles.snslink}>Twitter / X</a>
+      </div>
+    </div>
+  </article>
+
+  
+
   
 </section>
 
