@@ -1,359 +1,64 @@
 import styles from './CircleList.module.css'
 
-export default function CircleList() {
+type CircleLink = {
+  label: string
+  href: string
+}
+
+type Circle = {
+  imageSrc: string
+  imageAlt: string
+  name: string
+  handle: string
+  intro: string
+  links: CircleLink[]
+  booth: string
+}
+
+type CircleListProps = {
+  heading: string
+  comingSoon?: string
+  circles: Circle[]
+}
+
+export default function CircleList({
+  heading,
+  comingSoon,
+  circles,
+}: CircleListProps) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>サークル参加リスト</h2>
+        <h2 className={styles.heading}>{heading}</h2>
         <div className={styles.comingSoon}>
-
-
-
-<section className={styles.circlelist}>
-  <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/02.jpeg" alt="新大阪（仮）本部のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>新大阪（仮）本部</h3>
-      <span className={styles.circlehandle}>ｉｃｏ</span>
-      <p className={styles.circleintro}>プチオンリー本部です。まずはこちらにお立ち寄りいただき、パンフレットをお受け取り下さい。</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/gbc_shinoosaka" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ09a</p>
-      </div>
-    </div>
-  </article>
-
-    <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/05.png" alt="びびっどサンダーのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>びびっどサンダー</h3>
-      <span className={styles.circlehandle}>ズミクニ</span>
-      <p className={styles.circleintro}>ガールズバンドクライの桃香さんが悩む本</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/zumikuni" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ09b</p>
-      </div>
-    </div>
-  </article>
-  
-
-
-              <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/23.jpeg" alt="GO!GO!2711のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>GO!GO!2711</h3>
-      <span className={styles.circlehandle}>24、ビオ</span>
-      <p className={styles.circleintro}>トキナシトキアリ</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/2outni4" className={styles.snslink}>Twitter（24）</a> /  / <a href="https://x.com/motenaikitakami" className={styles.snslink}>Twitter（ビオ）</a>
-      <p>Ｊ10a</p>
-      </div>
-    </div>
-                
-  </article>
-      <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/06.png" alt="まどぎわのひとのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>まどぎわのひと</h3>
-      <span className={styles.circlehandle}>なるかぜ</span>
-      <p className={styles.circleintro}>ガールズバンドクライの日常作品などをまとめました。</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/narukaze__" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ10b</p>
-      </div>
-    </div>
-  </article>
-  
-        <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/17.png" alt="かもごはんのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>かもごはん</h3>
-      <span className={styles.circlehandle}>kamo</span>
-      <p className={styles.circleintro}>オールキャラ漫画河原木ましまし多め</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/kamo_gohan" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ11a</p>
-      </div>
-    </div>
-  </article>
-
-      <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/09.png" alt="EIMLESSのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>EIMLESS</h3>
-      <span className={styles.circlehandle}>ルア</span>
-      <p className={styles.circleintro}>初参加です。ヒナとトゲトゲがもし偶然、運命、必然的に出会ったら…的なギャグ漫画本を出す予定です！</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/rua_gr_" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ11b</p>
-      </div>
-    </div>
-  </article>
-
-      <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/13.png" alt="古代藍色研究会のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>古代藍色研究会</h3>
-      <span className={styles.circlehandle}>今陣</span>
-      <p className={styles.circleintro}>ガルクラの漫画(コピー本)の予定です</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/ima_jin_2458" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ12a</p>
-      </div>
-    </div>
-  </article>
-  
-        <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/15.png" alt="生まれたての蟹のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>生まれたての蟹</h3>
-      <span className={styles.circlehandle}>nes_Q</span>
-      <p className={styles.circleintro}>Xに投稿した漫画の再録本になる予定です。描き下ろしも多分する。</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/nes_Q" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ12b</p>
-      </div>
-    </div>
-  </article>
-
-          <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/18.png" alt="鴉舟（仮）のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>鴉舟（仮）</h3>
-      <span className={styles.circlehandle}>raberave</span>
-      <p className={styles.circleintro}>湿度の高いダイダス描きたいよね（願望）</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/raberave" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ13a</p>
-      </div>
-    </div>
-  </article>
-
-          <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/19.png" alt="イレリモツのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>イレリモツ</h3>
-      <span className={styles.circlehandle}>reitsumo</span>
-      <p className={styles.circleintro}>ガルクラ本初めて描きます、よろしくお願いいたします！</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/ustier_210" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ13b</p>
-      </div>
-    </div>
-  </article>
-  
-    <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/08.png" alt="群青温泉湯あがり庵のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>群青温泉湯あがり庵</h3>
-      <span className={styles.circlehandle}>群青温泉</span>
-      <p className={styles.circleintro}>初のガルクラSS本です！日常系がお好みの方にオススメしたいです♪よろしくお願いします！</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/gunjo_spa" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ14a</p>
-      </div>
-    </div>
-  </article>
-
-    <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/10.png" alt="天頂の隠れ家のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>天頂の隠れ家</h3>
-      <span className={styles.circlehandle}>天頂</span>
-      <p className={styles.circleintro}>過去に制作したグッズと新規でアクリルキーホルダーを頒布予定です！</p>
-      <div className={styles.circlesocial}>
-                  <a href="https://x.com/tentyono_artrie" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ14b</p>
-      </div>
-    </div>
-  </article>
-
-              <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/22.png" alt="マングロース工房のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>マングロース工房</h3>
-      <span className={styles.circlehandle}>リラックマングロース</span>
-      <p className={styles.circleintro}>ガルクラ最高〜！</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/relax_1007" className={styles.snslink}>Twitter / X</a> / <a href="https://www.pixiv.net/users/5573613" className={styles.snslink}>Pixiv</a>
-<p>Ｊ15a</p>
-      </div>
-    </div>
-  </article>
-
-        <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/14.png" alt="下駄札26のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>下駄札26</h3>
-      <span className={styles.circlehandle}>はるのぶ</span>
-      <p className={styles.circleintro}>初ガルクラです。ルパさんや桃香さんなど、おそらく酒飲みの何らかが…</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/harunobu_or2" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ15b</p>
-      </div>
-    </div>
-  </article>
-
-      <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/12.png" alt="ナスザウルスのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>ナスザウルス</h3>
-      <span className={styles.circlehandle}>てらのてら子</span>
-      <p className={styles.circleintro}>サークル「ナスザウルス」です。ガルクラの女女本出してます。よろしくお願いします。〜(   'ω'〜)</p>
-      <div className={styles.circlesocial}>
-       <a href="https://x.com/5120Gigabyte" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ16a</p>
-      </div>
-    </div>
-  </article>
-
-  <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/21.png" alt="完全手動エクスプレスのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>完全手動エクスプレス</h3>
-      <span className={styles.circlehandle}>えんびたんさん</span>
-      <p className={styles.circleintro}>桃香×仁菜のカプ小説メインでやってます。。</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/AVE_EEE" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ16b</p>
-      </div>
-    </div>
-  </article>
-
-        <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/16.png" alt="はやおきできた！のサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>はやおきできた！</h3>
-      <span className={styles.circlehandle}>ぷるたぶ</span>
-      <p className={styles.circleintro}>になもも本かなにか</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/prpr_churu" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ17a</p>
-      </div>
-    </div>
-  </article>
-
-      <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/11.jpg" alt="ハムちゃん大好きのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>ハムちゃん大好き</h3>
-      <span className={styles.circlehandle}>もみ</span>
-      <p className={styles.circleintro}>になもも/再録か何か</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/hamchan69" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ17b</p>
-      </div>
-    </div>
-  </article>
-  
-            <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/20.png" alt="ペンギンぱーのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>ペンギンぱー</h3>
-      <span className={styles.circlehandle}>ケイキチ</span>
-      <p className={styles.circleintro}>人生初参加です。になももの小説を頑張って書きます。</p>
-      <div className={styles.circlesocial}>
-          <a href="https://x.com/KEUkei819" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ18a</p>
-      </div>
-    </div>
-  </article>
-
-  <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/03.png" alt="トポロジカルブランケットのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>トポロジカルブランケット</h3>
-      <span className={styles.circlehandle}>k5</span>
-      <p className={styles.circleintro}>仁菜ヒナ！仁菜ヒナ！仁菜ヒナ！仁菜ヒナ！</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/TiroDuetto" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ18b</p>
-      </div>
-    </div>
-  </article>
-
-      <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/07.PNG" alt="あつあつフライヤーのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>あつあつフライヤー</h3>
-      <span className={styles.circlehandle}>フライング・フライドポテト</span>
-      <p className={styles.circleintro}>ニナヒナの漫画です。グッズとかも考えてます。</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/flyingfriesfree" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ19a</p>
-      </div>
-    </div>
-  </article>
-
-    <article className={styles.circlecard}>
-    <figure className={styles.circlethumb}>
-      <img src="/gbc_shinoosaka/images/CC/04.png" alt="ぼたさんちのサークルカット" />
-    </figure>
-    <div className={styles.circlebody}>
-      <h3 className={styles.circlename}>ぼたさんち</h3>
-      <span className={styles.circlehandle}>甘味トロ</span>
-      <p className={styles.circleintro}>ヒナがトゲナシトゲアリに加入している世界に仁菜が異世界転生するお話です！</p>
-      <div className={styles.circlesocial}>
-        <a href="https://x.com/botatoro3" className={styles.snslink}>Twitter / X</a>
-        <p>Ｊ19b</p>
-      </div>
-    </div>
-  </article>
-
-  
-
-  
-</section>
-
-
-
-
-
-
-
-          
+          {comingSoon && circles.length === 0 && <p>{comingSoon}</p>}
+          {circles.length > 0 && (
+            <section className={styles.circlelist}>
+              {circles.map((circle) => (
+                <article className={styles.circlecard} key={circle.name}>
+                  <figure className={styles.circlethumb}>
+                    <img src={circle.imageSrc} alt={circle.imageAlt} />
+                  </figure>
+                  <div className={styles.circlebody}>
+                    <h3 className={styles.circlename}>{circle.name}</h3>
+                    <span className={styles.circlehandle}>{circle.handle}</span>
+                    <p className={styles.circleintro}>{circle.intro}</p>
+                    <div className={styles.circlesocial}>
+                      {circle.links.map((link, index) => (
+                        <span key={link.href}>
+                          <a className={styles.snslink} href={link.href}>
+                            {link.label}
+                          </a>
+                          {index < circle.links.length - 1 && ' / '}
+                        </span>
+                      ))}
+                      <p>{circle.booth}</p>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </section>
+          )}
         </div>
       </div>
     </section>

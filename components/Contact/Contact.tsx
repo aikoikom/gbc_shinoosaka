@@ -1,24 +1,41 @@
 import styles from './Contact.module.css'
 
-export default function Contact() {
+type ContactProps = {
+  heading: string
+  intro: React.ReactNode
+  organizer: string
+  email: string
+  form?: {
+    label: string
+    href: string
+  }
+}
+
+export default function Contact({
+  heading,
+  intro,
+  organizer,
+  email,
+  form,
+}: ContactProps) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>連絡先</h2>
+        <h2 className={styles.heading}>{heading}</h2>
         <div className={styles.content}>
-          <p className={styles.text}>
-            本イベントに対してご質問やご意見がありましたら<br />
-            以下の連絡先にお願いいたします。
-          </p>
+          <p className={styles.text}>{intro}</p>
           <div className={styles.contactInfo}>
-            <p className={styles.organizer}>主催者：ico</p>
-            <p className={styles.email}>
-              MAIL: aikoiko.m@gmail.com</p>
-          <div className={styles.buttonarea}>
-           <p className={styles.contactbutton}>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeuMRsJm85IwDxXvseNyhXnPU7aG-H6OcWrXBgzlg6-sqcBOw/viewform?usp=header" target="_blank">
-             お問い合わせフォーム</a></p>
-          </div>
+            <p className={styles.organizer}>{organizer}</p>
+            <p className={styles.email}>{email}</p>
+            {form && (
+              <div className={styles.buttonarea}>
+                <p className={styles.contactbutton}>
+                  <a href={form.href} target="_blank" rel="noreferrer">
+                    {form.label}
+                  </a>
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
