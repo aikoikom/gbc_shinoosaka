@@ -7,21 +7,22 @@ import CircleList from '@/components/CircleList/CircleList'
 import EventPurpose from '@/components/EventPurpose/EventPurpose'
 import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Footer/Footer'
+import { firstEvent } from '@/app/eventContent'
 
 export default function FirstEventArchive() {
   return (
     <>
-      <Header />
+      <Header {...firstEvent.header} />
       <main>
-        <AboutPetitOnly />
-        <CircleParticipation />
-        <GeneralParticipation />
-        <CosplayInfo />
-        <CircleList />
-        <EventPurpose />
-        <Contact />
+        <AboutPetitOnly {...firstEvent.about} />
+        <CircleParticipation {...firstEvent.circleParticipation} />
+        <GeneralParticipation {...firstEvent.generalParticipation} />
+        <CosplayInfo {...firstEvent.cosplayInfo} />
+        <CircleList {...firstEvent.circleList} />
+        <EventPurpose {...firstEvent.eventPurpose} />
+        <Contact {...firstEvent.contact} />
       </main>
-      <Footer />
+      <Footer {...firstEvent.footer} />
     </>
   )
 }

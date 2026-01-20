@@ -1,13 +1,16 @@
 import styles from './CosplayInfo.module.css'
 
-export default function CosplayInfo() {
+type CosplayInfoProps = {
+  heading: string
+  text: React.ReactNode
+}
+
+export default function CosplayInfo({ heading, text }: CosplayInfoProps) {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <h2 className={styles.heading}>コスプレ参加について</h2>
-        <p className={styles.text}>
-          コスプレ参加につきましては、<a href="https://www.aoboo.jp/event/item/p0087.html">こみっくトレジャー47</a>に準じます。
-        </p>
+        <h2 className={styles.heading}>{heading}</h2>
+        <p className={styles.text}>{text}</p>
       </div>
     </section>
   )

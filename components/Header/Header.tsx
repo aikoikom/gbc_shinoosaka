@@ -1,23 +1,42 @@
 import styles from './Header.module.css'
 
-export default function Header() {
+type HeaderProps = {
+  logoSrc: string
+  logoAlt: string
+  titleLines: string[]
+  date: string
+  venue: React.ReactNode
+  hashtag: string
+}
+
+export default function Header({
+  logoSrc,
+  logoAlt,
+  titleLines,
+  date,
+  venue,
+  hashtag,
+}: HeaderProps) {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <img
-          src="/gbc_shinoosaka/images/logo.png"
-          alt="ガールズバンドクライプチオンリーロゴ"
+          src={logoSrc}
+          alt={logoAlt}
           className={styles.logo}
         />
         <h1 className={styles.title}>
-          ガールズバンドクライプチオンリー
-          <br />
-         『新大阪（仮）』
+          {titleLines.map((line, index) => (
+            <span key={line}>
+              {line}
+              {index < titleLines.length - 1 && <br />}
+            </span>
+          ))}
         </h1>
         <div className={styles.eventInfo}>
-          <p className={styles.date}>2026年1月18日（日）</p>
-          <p className={styles.venue}><a href="https://www.aoboo.jp/event/item/p0087.html">こみっくトレジャー47</a> at インテックス大阪</p>
-          <p className={styles.hashtag}>#大阪ガルクラプチ</p>
+          <p className={styles.date}>{date}</p>
+          <p className={styles.venue}>{venue}</p>
+          <p className={styles.hashtag}>{hashtag}</p>
         </div>
       </div>
     </header>
