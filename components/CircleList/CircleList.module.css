@@ -1,6 +1,6 @@
 .section {
   padding: 3rem 1rem;
-  background-color: #f8f9fa;
+  background-color: var(--color-surface);
 }
 
 .container {
@@ -13,19 +13,19 @@
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  color: #7b2d26;
+  color: var(--color-accent);
 }
 
 .comingSoon {
   text-align: center;
   padding: 3rem;
-  background-color: #ffffff;
+  background-color: var(--color-bg);
   border-radius: 8px;
 }
 
 .comingSoon p {
   font-size: 1.5rem;
-  color: #999;
+  color: var(--color-muted);
   font-style: italic;
 }
 
@@ -40,8 +40,8 @@
 
 
 .circlecard {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
   border-radius: 10px;
   padding-bottom: 4px; 
   overflow: hidden;
@@ -77,7 +77,7 @@
 
 .circlehandle {
   font-size: 0.85rem;
-  color: #555;
+  color: var(--color-muted);
 }
 
 .circleintro {
@@ -97,16 +97,16 @@
   font-size: 0.85rem;
   padding: 3px 8px;
   border-radius: 6px;
-  border: 1px solid #bbb;
-  color: #0078ff;
+  border: 1px solid var(--color-border);
+  color: var(--color-link);
   text-decoration: none;
   transition: background-color .15s, border-color .15s;
 }
 
 .snslink:hover,
 .snslink:focus-visible {
-  background: #e8f2ff;
-  border-color: #0078ff;
+  background: var(--color-link-bg);
+  border-color: var(--color-link);
 }
 
 

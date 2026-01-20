@@ -1,5 +1,9 @@
 .header {
-background: linear-gradient(135deg, #ff0000 0%, #000000 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-hero-start) 0%,
+    var(--color-hero-end) 100%
+  );
   color: white;
   padding: 3rem 1rem;
   text-align: center;

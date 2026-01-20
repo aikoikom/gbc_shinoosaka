@@ -11,7 +11,7 @@ import { secondEvent } from '@/app/eventContent'
 
 export default function SecondEventArchive() {
   return (
-    <>
+    <div data-theme="second">
       <Header {...secondEvent.header} />
       <main>
         <AboutPetitOnly {...secondEvent.about} />
@@ -23,6 +23,6 @@ export default function SecondEventArchive() {
         <Contact {...secondEvent.contact} />
       </main>
       <Footer {...secondEvent.footer} />
-    </>
+    </div>
   )
 }
