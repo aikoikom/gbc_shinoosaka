@@ -1,6 +1,6 @@
 .section {
   padding: 3rem 1rem;
-  background-color: #f8f9fa;
+  background-color: var(--color-surface);
 }
 
 .container {
@@ -13,7 +13,7 @@
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  color: #7b2d26;
+  color: var(--color-accent);
 }
 
 .content {
@@ -27,7 +27,7 @@
 }
 
 .contactInfo {
-  background-color: #ffffff;
+  background-color: var(--color-bg);
   padding: 2rem;
   border-radius: 8px;
   display: inline-block;
@@ -47,7 +47,7 @@
 
 .emailNote {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-muted);
 }
 
 
@@ -61,8 +61,12 @@
   display: inline-block;
   padding: 14px 40px; 
   font-size: clamp(14px, 2vw, 18px); 
-  background: linear-gradient(135deg, #c16a74 0%, #b45f5f 100%);
-  color: #000;  
+  background: linear-gradient(
+    135deg,
+    var(--color-button-start) 0%,
+    var(--color-button-end) 100%
+  );
+  color: var(--color-button-text);
   font-weight: 700;
   border: none;
   border-radius: 9999px;   
@@ -74,7 +78,11 @@
 
 /* ホバー時の演出 */
 .contactbutton:hover {
-  background: linear-gradient(135deg, #d57c83 0%, #c16a74 100%);
+  background: linear-gradient(
+    135deg,
+    var(--color-button-end) 0%,
+    var(--color-button-start) 100%
+  );
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
 }
@@ -101,5 +109,4 @@
     width: 100%;
   }
 }
-
 

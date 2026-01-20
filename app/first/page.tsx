@@ -11,7 +11,7 @@ import { firstEvent } from '@/app/eventContent'
 
 export default function FirstEventArchive() {
   return (
-    <>
+    <div data-theme="first">
       <Header {...firstEvent.header} />
       <main>
         <AboutPetitOnly {...firstEvent.about} />
@@ -23,6 +23,6 @@ export default function FirstEventArchive() {
         <Contact {...firstEvent.contact} />
       </main>
       <Footer {...firstEvent.footer} />
-    </>
+    </div>
   )
 }
