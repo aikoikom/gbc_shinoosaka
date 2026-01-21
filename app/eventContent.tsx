@@ -743,7 +743,6 @@ eventPurpose: {
       '最新の情報詳細はリンク先の各印刷所様HPにてご確認の上、ご利用ください。',
     ],
     supporters,
-  },
 },
 
   footer: {
