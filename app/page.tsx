@@ -22,7 +22,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              公式Xで最新情報
+              Xで最新情報を確認
             </a>
           </div>
         </div>
