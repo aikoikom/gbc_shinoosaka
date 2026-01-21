@@ -668,6 +668,35 @@ export const secondEvent: EventContent = {
     ],
   },
 
+ generalParticipation: {
+    heading: '一般参加方法',
+    steps: [
+      {
+        title: '1. 入場',
+        paragraphs: [
+          <>
+            <a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a>
+            の会場に入場したら、ガイドブックをお一人様１冊を入場ゲートでご購入をして下さい。
+            <br />
+            （本イベントを含めた、
+            <a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a>
+            内で開催するイベントの全てに参加が出来ます。）
+          </>,
+        ],
+      },
+      {
+        title: '2. パンフレット購入',
+        paragraphs: [
+          <>
+            「ガールズバンドヤタイ」本部のサークルスペースに来ていただき、パンフレットを1冊購入する。
+            <br />
+            （なくても頒布されている同人誌は手に入れられます）
+          </>,
+        ],
+      },
+    ],
+  },
+  
   circleList: {
     heading: 'サークル参加リスト',
     comingSoon: 'Coming soon...',
