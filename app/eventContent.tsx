@@ -595,6 +595,81 @@ export const secondEvent: EventContent = {
     venue: '<a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a> at マリンメッセ福岡</>',
     hashtag: '#ガールズバンドヤタイ',
   },
+
+export const secondEvent: EventContent = {
+  ...firstEvent,
+
+  // ここは前に作った header 上書き（省略）
+
+  circleParticipation: {
+    heading: 'サークル参加方法',
+    steps: [
+      {
+        title: (
+          <>
+            1. <a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a>
+            へサークル参加申込
+          </>
+        ),
+        paragraphs: [
+          <>
+            <a href="https://www.b2-online.jp/event/">b2-online</a>からお申込み
+          </>,
+        ],
+        listItems: [
+          'ジャンルコード: アニメFC ◆該当なしアニメFCジャンル（C欄に「ガールズバンドクライ」と記入）',
+          '備考欄に「プチオンリー『ガールズバンドヤタイ』連結希望」と記載すること',
+          'お申込み〆切は、2026年5月8日（金）23:59までです。（満了次第受付終了）',
+        ],
+        button: {
+          label: '親イベント「COMIC CITY 福岡 64」',
+          href: 'https://www.akaboo.jp/event/item/20204482.html',
+        },
+      },
+
+      // ✅ ボタン2個目を置きたいので、ステップを分けて追加
+      {
+        title: '申込みサイト',
+        paragraphs: ['b2-online からお申込みください。'],
+        button: {
+          label: '申し込みサイト「b2-online」',
+          href: 'https://www.b2-online.jp/event/',
+        },
+      },
+
+      {
+        title: '2. 参加申請フォーム送信',
+        paragraphs: [
+          <>
+            <a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a>
+            のお申し込み完了後に下記フォームにて参加申請をお願いします。
+          </>,
+          '※参加申請は、2026年5月10日（金）23:59までにお願いします。',
+        ],
+        button: {
+          label: '「ガールズバンドヤタイ」お申込みフォーム',
+          href: '', // ← ここにフォームURLを入れる
+        },
+      },
+
+      {
+        title: '3. 当日の頒布',
+        paragraphs: [
+          <>
+            当日は「ガールズバンドクライ」にまつわる作品を、一種以上頒布をお願いします。
+            <br />
+            また、当日スペースの前に貼ることのできる横断幕（約900mm×350mmの布）をお渡し予定です。
+            <br />
+            （プチオンリーに参加しているとわかりやすくするため、設営に差し支えがなければ、貼っていただけると幸いです）
+          </>,
+        ],
+      },
+    ],
+  },
+
+  // circleList など他の上書きはそのままでOK
+}
+
   
   circleList: {
     heading: 'サークル参加リスト',
