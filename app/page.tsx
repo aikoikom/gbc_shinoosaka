@@ -7,7 +7,7 @@ export default function Home() {
       <header className={styles.hero}>
         <div className={styles.heroInner}>
           <p className={styles.kicker}>Next Event</p>
-          <h1 className={styles.title}>新しいイベントを準備中</h1>
+          <h1 className={styles.title}>ガールズバンドヤタイ in 福岡</h1>
           <p className={styles.subtitle}>
             詳細・告知内容は後日公開予定です。公開前の更新もあるため、
             最新情報はこのページをご確認ください。
@@ -32,7 +32,8 @@ export default function Home() {
         <section className={styles.infoGrid}>
           <article className={styles.card}>
             <h2 className={styles.cardTitle}>開催概要</h2>
-            <p className={styles.cardText}>日程・会場・参加方法は準備中です。</p>
+            <p className={styles.cardText}>2026年6月21日（日）、マリンメッセ福岡にて開催決定！</p>
+            <p className={styles.cardText}>その他、詳細は準備中です。</p>            
             <p className={styles.cardText}>
               公開後に随時更新していきます。
             </p>
@@ -49,7 +50,7 @@ export default function Home() {
               前回イベントの告知ページはアーカイブとして保存しています。
             </p>
             <Link className={styles.inlineLink} href="/first">
-              /first を開く
+              新大阪（仮）
             </Link>
           </article>
         </section>
