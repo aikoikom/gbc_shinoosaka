@@ -588,14 +588,17 @@ export const firstEvent: EventContent = {
 export const secondEvent: EventContent = {
   ...firstEvent,
   header: {
+    ...firstEvent.header, // ← これも入れた方が安全
     logoSrc: '/gbc_shinoosaka/images/logo2.png',
     logoAlt: 'ガールズバンドヤタイ ロゴ',
-    titleLines: ['ガールズバンドクライプチオンリー','『ガールズバンドヤタイ』'],
+    titleLines: ['ガールズバンドクライプチオンリー', '『ガールズバンドヤタイ』'],
     date: '2026年6月21日（日）',
-    venue: <>
+    venue: (
+      <>
         <a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a>
         {' '}at マリンメッセ福岡
-      </>,
+      </>
+    ),
     hashtag: '#ガールズバンドヤタイ',
   },
 
@@ -624,8 +627,6 @@ export const secondEvent: EventContent = {
           href: 'https://www.akaboo.jp/event/item/20204482.html',
         },
       },
-
-      // ✅ ボタン2個目を置きたいので、ステップを分けて追加
       {
         title: '申込みサイト',
         paragraphs: ['b2-online からお申込みください。'],
@@ -634,7 +635,6 @@ export const secondEvent: EventContent = {
           href: 'https://www.b2-online.jp/event/',
         },
       },
-
       {
         title: '2. 参加申請フォーム送信',
         paragraphs: [
@@ -646,10 +646,9 @@ export const secondEvent: EventContent = {
         ],
         button: {
           label: '「ガールズバンドヤタイ」お申込みフォーム',
-          href: '', // ← ここにフォームURLを入れる
+          href: '（フォームURLをここに）',
         },
       },
-
       {
         title: '3. 当日の頒布',
         paragraphs: [
@@ -665,10 +664,6 @@ export const secondEvent: EventContent = {
     ],
   },
 
-  // circleList など他の上書きはそのままでOK
-}
-
-  
   circleList: {
     heading: 'サークル参加リスト',
     comingSoon: 'Coming soon...',
