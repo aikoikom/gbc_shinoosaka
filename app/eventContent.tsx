@@ -737,5 +737,10 @@ eventPurpose: {
   },
   // 支援印刷所は firstEvent のまま使う（変えるなら supportIntro/supporters を上書き）
 },
+
+  footer: {
+    text: 'ガールズバンドクライプチオンリー 「ガールズバンドヤタイ」）',
+  },
+}
   
 }
