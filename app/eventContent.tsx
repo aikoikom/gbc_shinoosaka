@@ -696,6 +696,19 @@ export const secondEvent: EventContent = {
       },
     ],
   },
+
+cosplayInfo: {
+  heading: 'コスプレ参加について',
+  text: (
+    <>
+      コスプレ参加につきましては、
+      <a href="https://www.akaboo.jp/event/item/20204482.html">
+        COMIC CITY 福岡 64
+      </a>
+      に準じます。
+    </>
+  ),
+},
   
   circleList: {
     heading: 'サークル参加リスト',
