@@ -632,18 +632,13 @@ export const secondEvent: EventContent = {
           label: '親イベント「COMIC CITY 福岡 64」',
           href: 'https://www.akaboo.jp/event/item/20204482.html',
           },
-        ],
-      },
-      {
-        title: '申込みサイト',
-        paragraphs: ['b2-online からお申込みください。'],
-        buttons: [
           {
           label: '申し込みサイト「b2-online」',
           href: 'https://www.b2-online.jp/event/',
           },
         ],
       },
+     
       {
         title: '2. 参加申請フォーム送信',
         paragraphs: [
