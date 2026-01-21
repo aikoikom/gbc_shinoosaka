@@ -592,14 +592,12 @@ export const secondEvent: EventContent = {
     logoAlt: 'ガールズバンドヤタイ ロゴ',
     titleLines: ['ガールズバンドクライプチオンリー','『ガールズバンドヤタイ』'],
     date: '2026年6月21日（日）',
-    venue: '<a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a> at マリンメッセ福岡</>',
+    venue: <>
+        <a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a>
+        {' '}at マリンメッセ福岡
+      </>,
     hashtag: '#ガールズバンドヤタイ',
   },
-
-export const secondEvent: EventContent = {
-  ...firstEvent,
-
-  // ここは前に作った header 上書き（省略）
 
   circleParticipation: {
     heading: 'サークル参加方法',
