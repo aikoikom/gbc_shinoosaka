@@ -733,9 +733,17 @@ eventPurpose: {
   ],
   cta: {
     label: 'Twitter（現X）はこちら',
-    href: 'https://x.com/gbc_shinoosaka', // ←「ガールズバンドヤタイ」のアカウントに変えるならここ
+    href: 'https://x.com/gbc_shinoosaka', 
   },
-  // 支援印刷所は firstEvent のまま使う（変えるなら supportIntro/supporters を上書き）
+    supportHeading: '支援印刷所',
+    supportIntro: [
+      '親イベント「COMIC CITY 福岡 64」と弊プチオンリーを支援してくださる印刷所です。（順不同/敬称略）',
+      'あたたかいご支援、ありがとうございます！',
+      '※特典内容は予告無く変更となる場合がございます。',
+      '最新の情報詳細はリンク先の各印刷所様HPにてご確認の上、ご利用ください。',
+    ],
+    supporters,
+  },
 },
 
   footer: {
