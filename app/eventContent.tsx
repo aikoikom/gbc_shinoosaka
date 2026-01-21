@@ -587,6 +587,16 @@ export const firstEvent: EventContent = {
 
 export const secondEvent: EventContent = {
   ...firstEvent,
+export type EventContent = {
+  header: {
+    logoSrc: /gbc_shinoosaka/images/logo2.png
+    logoAlt: string
+    titleLines: ['ガールズバンドクライプチオンリー','『ガールズバンドヤタイ』']
+    date: 2026年6月21日（日）
+    venue: <a href="https://www.akaboo.jp/event/item/20204482.html">COMIC CITY 福岡 64</a> at マリンメッセ福岡  </>
+    hashtag: #ガールズバンドヤタイ
+  }
+  
   circleList: {
     heading: 'サークル参加リスト',
     comingSoon: 'Coming soon...',
