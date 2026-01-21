@@ -44,6 +44,7 @@ export type EventContent = {
       listItems?: ReactNode[]
       paragraphs?: ReactNode[]
       button?: { label: string; href: string }
+      buttons?: { label: string; href: string }[]
     }[]
   }
   generalParticipation: {
@@ -465,10 +466,12 @@ export const firstEvent: EventContent = {
         paragraphs: [
           '※b2 online以外の場合→W001_パロディ：アニメ原作（B欄に原作名・キャラ・傾向記載）',
         ],
-        button: {
+        buttons: [
+          {
           label: '親イベント「こみっくトレジャー47」',
           href: 'https://www.aoboo.jp/event/item/p0087.html',
-        },
+          },
+        ],
       },
       {
         title: '2. 参加申請フォーム送信',
@@ -476,11 +479,13 @@ export const firstEvent: EventContent = {
           'こみトレ47のお申し込み完了後に下記フォームにて参加申請をお願いします。',
           '※参加申請は、2025年11月30日23:59までにお願いします。',
         ],
-        button: {
+        buttons: [
+          {
           label: '「新大阪（仮）」お申込みフォーム',
           href:
             'https://docs.google.com/forms/d/e/1FAIpQLSfZurn-tWdMHxN5c61e96gXfx313cVc_V1d1JGKy9X-mr1nMA/viewform?usp=header',
-        },
+          },
+        ],
       },
       {
         title: '3. 当日の頒布',
@@ -622,18 +627,22 @@ export const secondEvent: EventContent = {
           '備考欄に「プチオンリー『ガールズバンドヤタイ』連結希望」と記載すること',
           'お申込み〆切は、2026年5月8日（金）23:59までです。（満了次第受付終了）',
         ],
-        button: {
+        buttons: [
+          {
           label: '親イベント「COMIC CITY 福岡 64」',
           href: 'https://www.akaboo.jp/event/item/20204482.html',
-        },
+          },
+        ],
       },
       {
         title: '申込みサイト',
         paragraphs: ['b2-online からお申込みください。'],
-        button: {
+        buttons: [
+          {
           label: '申し込みサイト「b2-online」',
           href: 'https://www.b2-online.jp/event/',
-        },
+          },
+        ],
       },
       {
         title: '2. 参加申請フォーム送信',

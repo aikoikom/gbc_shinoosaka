@@ -8,6 +8,10 @@ type CircleParticipationStep = {
     label: string
     href: string
   }
+  buttons?: {
+    label: string
+    href: string
+  }[]
 }
 
 type CircleParticipationProps = {
@@ -37,15 +41,27 @@ export default function CircleParticipation({
               {step.paragraphs?.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
-              {step.button && (
+              {(() => {
+                const buttons = step.buttons ?? (step.button ? [step.button] : [])
+                if (buttons.length === 0) {
+                  return null
+                }
+                return (
                 <div className={styles.buttonarea}>
-                  <p className={styles.button}>
-                    <a href={step.button.href} target="_blank" rel="noreferrer">
-                      {step.button.label}
+                  {buttons.map((button, buttonIndex) => (
+                    <a
+                      className={styles.button}
+                      href={button.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={`${button.label}-${buttonIndex}`}
+                    >
+                      {button.label}
                     </a>
-                  </p>
+                  ))}
                 </div>
-              )}
+                )
+              })()}
             </div>
           ))}
         </div>
