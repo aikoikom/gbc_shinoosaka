@@ -33,15 +33,17 @@ export default function Home() {
           <article className={styles.card}>
             <h2 className={styles.cardTitle}>開催概要</h2>
             <p className={styles.cardText}>2026年6月21日（日）、マリンメッセ福岡にて開催決定！</p>
-            <p className={styles.cardText}>その他、詳細は準備中です。</p>            
+            <p className={styles.cardText}>その他、詳細はイベントページへ。</p>            
             <p className={styles.cardText}>
               公開後に随時更新していきます。
             </p>
           </article>
           <article className={styles.card}>
-            <h2 className={styles.cardTitle}>参加募集</h2>
+            <h2 className={styles.cardTitle}>サークル参加募集</h2>
             <p className={styles.cardText}>
-              サークル参加・一般参加ともに情報公開までお待ちください。
+              1.b2-onlineからCOMIC CITY 福岡 64へサークル参加お申込み<br></br>
+              2.COMIC CITY 福岡 64のお申し込み完了後に下記フォームにて参加申請<br></br>
+              両方のお申し込みで申請完了です！（CC福岡63の満了次第募集終了）
             </p>
           </article>
           <article className={styles.card}>
