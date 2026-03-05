@@ -427,6 +427,17 @@ const supporters: Supporter[] = [
   },
 ]
 
+const secondSupporters: Supporter[] = [
+{
+    name: 'ねこのしっぽ',
+    siteUrl: 'https://www.shippo.co.jp/neko/',
+    bannerSrc: 'https://www.shippo.co.jp/neko/img/neko_banner.gif',
+    bannerAlt: 'ねこのしっぽ バナー',
+    supportUrl: 'https://www.shippo.co.jp/neko/schedule/event_support.shtml',
+    benefits: ['優遇イベント専用〆切', 'イベント会場への搬入料 送料無料'],
+  },
+]
+
 export const firstEvent: EventContent = {
   header: {
     logoSrc: '/gbc_shinoosaka/images/logo.png',
@@ -742,7 +753,7 @@ eventPurpose: {
       '※特典内容は予告無く変更となる場合がございます。',
       '最新の情報詳細はリンク先の各印刷所様HPにてご確認の上、ご利用ください。',
     ],
-    supporters,
+    secondSupporter,
 },
 
   footer: {
