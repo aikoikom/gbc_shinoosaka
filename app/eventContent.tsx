@@ -753,7 +753,7 @@ eventPurpose: {
       '※特典内容は予告無く変更となる場合がございます。',
       '最新の情報詳細はリンク先の各印刷所様HPにてご確認の上、ご利用ください。',
     ],
-    secondSupporter,
+    supporters: secondSupporters, 
 },
 
   footer: {
