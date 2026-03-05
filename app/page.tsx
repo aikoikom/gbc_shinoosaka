@@ -41,9 +41,9 @@ export default function Home() {
           <article className={styles.card}>
             <h2 className={styles.cardTitle}>サークル参加募集</h2>
             <p className={styles.cardText}>
-              1.b2-onlineからCOMIC CITY 福岡 64へサークル参加お申込み<br></br>
-              2.COMIC CITY 福岡 64のお申し込み完了後に下記フォームにて参加申請<br></br>
-              両方のお申し込みで申請完了です！（CC福岡63の満了次第募集終了）
+              1.COMIC CITY 福岡 64へサークル参加お申込み<br></br>
+              2.申請フォームにて参加申請<br></br>
+              両方のお申し込みで申請完了です！
             </p>
           </article>
           <article className={styles.card}>
