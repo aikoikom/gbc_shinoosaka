@@ -9,8 +9,7 @@ export default function Home() {
           <p className={styles.kicker}>Next Event</p>
           <h1 className={styles.title}>ガールズバンドヤタイ in 福岡</h1>
           <p className={styles.subtitle}>
-            詳細・告知内容は後日公開予定です。公開前の更新もあるため、
-            最新情報はこのページをご確認ください。
+            最新情報は、イベントページをご参照ください！
           </p>
           <div className={styles.actions}>
             <Link className={styles.primary} href="/second">
