@@ -13,8 +13,8 @@ export default function Home() {
             最新情報はこのページをご確認ください。
           </p>
           <div className={styles.actions}>
-            <Link className={styles.primary} href="/first">
-              過去イベントアーカイブを見る
+            <Link className={styles.primary} href="/second">
+              イベントページを見る
             </Link>
             <a
               className={styles.secondary}
