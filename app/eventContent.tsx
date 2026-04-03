@@ -494,7 +494,7 @@ export const firstEvent: EventContent = {
           {
           label: '「新大阪（仮）」お申込みフォーム',
           href:
-            'https://forms.gle/1yX2V2VjnorKuK4RA',
+            '(URLをこちらへ）',
           },
         ],
       },
@@ -661,7 +661,7 @@ export const secondEvent: EventContent = {
         ],
         button: {
           label: '「ガールズバンドヤタイ」お申込みフォーム',
-          href: '（フォームURLをここに）',
+          href: 'https://docs.google.com/forms/d/e/1FAIpQLSdNARgYPyLbRs7yJlU94cwDZtZG6KyEmbm9ScNExXksHN30RQ/viewform?usp=header',
         },
       },
       {
