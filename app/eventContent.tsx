@@ -494,7 +494,7 @@ export const firstEvent: EventContent = {
           {
           label: '「新大阪（仮）」お申込みフォーム',
           href:
-            'https://docs.google.com/forms/d/e/1FAIpQLSfZurn-tWdMHxN5c61e96gXfx313cVc_V1d1JGKy9X-mr1nMA/viewform?usp=header',
+            'https://forms.gle/1yX2V2VjnorKuK4RA',
           },
         ],
       },
